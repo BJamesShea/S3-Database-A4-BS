@@ -30,6 +30,19 @@ public class LinkedListManager {
         }
     }
 
+    // Displaying the linky boy
+
+    public void displayList() {
+        Node current = head;
+        System.out.println("Linked list: ");
+
+        while (current != null) {
+            System.out.println(current.data + " ");
+            current = current.next;
+        }
+        System.out.println();
+    }
+
 
     public static void main(String[] args) {
         System.out.println("Linked lists!");
