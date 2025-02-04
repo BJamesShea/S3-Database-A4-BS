@@ -34,10 +34,10 @@ public class LinkedListManager {
 
     public void displayList() {
         Node current = head;
-        System.out.println("Linked list: ");
+        System.out.print("Linked list: ");
 
         while (current != null) {
-            System.out.println(current.data + " ");
+            System.out.print(current.data + " ");
             current = current.next;
         }
         System.out.println();
@@ -45,6 +45,13 @@ public class LinkedListManager {
 
 
     public static void main(String[] args) {
-        System.out.println("Linked lists!");
+        LinkedListManager list = new LinkedListManager();
+
+        list.addNode(10);
+        list.addNode(20);
+        list.addNode(30);
+        list.addNode(40);
+
+        list.displayList();
     }
 }
